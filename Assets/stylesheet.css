@@ -12,6 +12,7 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     background-image: url(./images/bg-intro-mobile.png);
@@ -73,6 +74,7 @@ body {
 .white-box .input-control {
     width: 85%;
     margin-top: 16px;
+    position: relative;
 }
 .white-box .input-control:first-of-type{
     margin-top: 0;
@@ -83,6 +85,12 @@ body {
     width: 100%;
     border-radius: 5px;
     border: 1px solid #DEDEDE; 
+    color: var(--dark-grey);
+}
+.white-box .input-control input{
+    color: var(--dark-grey);
+    font-size: 14px;
+    font-weight: 600;
 }
 .white-box .input-control input::placeholder {
     color: var(--dark-grey);
@@ -91,8 +99,7 @@ body {
     position: relative;
     left: 19.4px;
 }
-.white-box .error-txt {
-    display: none;
+.white-box .input-control .error {
     width: 100%;
     padding: 0;
     top: 6px;
@@ -101,20 +108,19 @@ body {
     text-align: right;
     color: var(--salmon);
 }
-.white-box .input-control .error input {
-    border: 1px solid var(--salmon);
+.white-box .input-control.error input {
+    border: 2px solid var(--salmon);
     color: var(--salmon);
 }
-.white-box .input-control .error input ::placeholder{
-    content: url(Assets\images\icon-error.svg);
-    width: 24px;
-    height: 24px;
-    position: relative;
+.input-control img {
+    visibility: hidden;
+    position: absolute;
+    top: 16px;
     right: 16px;
-    color: var(--salmon);
+    z-index: 2;
 }
-.error {
-    display: block;
+.input-control.error img{
+    visibility: visible;
 }
 .white-box button {
     width: 85%;

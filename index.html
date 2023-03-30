@@ -39,25 +39,49 @@
           </p>
         </div>
         <div class="white-box">
-          <form action="">
-            <div class="input-control error">
-              <input type="text" class="name" placeholder="First Name" />
-              <p class="error-txt error">First Name cannot be empty</p>
+          <form id="form" action="/" method="get">
+            <div class="input-control">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="First Name"
+              />
+              <img src="assets/images/icon-error.svg"></img>
+              <div class="error"></div>
             </div>
-            <div class="input-control error">
-              <input type="text" class="surname" placeholder="Last Name" />
-              <p class="error-txt error">Last Name cannot be empty</p>
+            <div class="input-control">
+              <input
+                type="text"
+                id="surname"
+                name="surname"
+                placeholder="Last Name"
+              />
+              <img src="assets/images/icon-error.svg"></img>
+              <div class="error"></div>
             </div>
-            <div class="input-control error">
-              <input type="email" class="email" placeholder="Email Address" />
-              <p class="error-txt error">Looks like this is not an email</p>
+            <div class="input-control">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+              />
+              <img src="assets/images/icon-error.svg"></img>
+              <div class="error"></div>
             </div>
-            <div class="input-control error">
-              <input type="password" class="password" placeholder="Password" />
-              <p class="error-txt error">Password cannot be empty</p>
+            <div class="input-control">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+              />
+              <img src="assets/images/icon-error.svg"></img>
+              <div class="error"></div>
             </div>
 
-            <button>claim your free trial</button>
+            <button type="submit">claim your free trial</button>
             <p class="terms-and-service">
               By clicking the button, you are agreeing to our
               <a>Terms and Services</a>
