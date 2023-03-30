@@ -148,22 +148,6 @@ body {
 .white-box a {
     color: var(--salmon)
 }
-/* .form-control {
-    width: 100%;
-}
-.form-error .helper-text {
-    display: block;
-}
-
-.helper-text {
-    display: none;
-}
-
-.form-error input {
-    border-color: red;
-} */
-
-
 .footer {
     background-color: transparent;
     font-size: 11px;
@@ -176,7 +160,7 @@ body {
 @media (min-width: 700px) {
 
     .main-content {
-        margin: 75px;
+        margin: 60px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 45px;
