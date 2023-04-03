@@ -17,6 +17,14 @@ const setError = (input, message) => {
   inputControl.classList.add("error");
 };
 
+const setSuccess = (input) => {
+  const inputControl = input.parentElement;
+  const errorDisplay = inputControl.querySelector(".error");
+
+  errorDisplay.innerText = "";
+  inputControl.classList.remove("error");
+};
+
 const isValidEmail = (email) => {
   // the const re IK just copied from the tutorial I used for this js
   const re =
@@ -33,20 +41,24 @@ const validateInputs = () => {
   if (firstNameValue === "") {
     setError(firstName, "First Name cannot be empty");
   } else {
+    setSuccess(firstName);
   }
 
   if (surnameValue === "") {
     setError(surname, "Last Name cannot be empty");
   } else {
+    setSuccess(surname);
   }
 
   if (!isValidEmail(emailValue)) {
     setError(email, "Looks like this is not an email");
   } else {
+    setSuccess(email);
   }
 
   if (passwordValue === "") {
     setError(password, "Password cannot be empty");
   } else {
+    setSuccess(password);
   }
 };
